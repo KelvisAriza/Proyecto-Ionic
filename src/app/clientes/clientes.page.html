@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Portal de Clientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<div>
+  <img src="assets/img/imgClientes.jpg" />
+</div>
+<ion-grid>
+   <ion-row>
+   <ion-col>
+        <ion-card class="card text-white bg-primary mb-3" routerLink="/clientes/formulario-cliente">
+          <ion-card-content>
+            <ion-row class="ion-justify-content-center">
+              <ion-icon class="home-icons" name="flash"></ion-icon>
+            </ion-row>
+            <ion-row class="ion-justify-content-center">
+              <ion-text class="text-center">Registrar Clientes</ion-text>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="card text-white bg-primary mb-3" routerLink="/clientes/consultar-cliente">
+          <ion-card-content>
+            <ion-row class="ion-justify-content-center">
+              <ion-icon class="home-icons" name="add"></ion-icon>
+            </ion-row>
+            <ion-row class="ion-justify-content-center">
+              <ion-text  class="text-center">Consultar Clientes</ion-text>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      </ion-row>
+  <ion-row>
+   <ion-col>
+        <ion-card class="card text-white bg-primary mb-3" routerLink="/prestamos/formulario-prestamo">
+          <ion-card-content>
+            <ion-row class="ion-justify-content-center">
+              <ion-icon class="home-icons" name="flash"></ion-icon>
+            </ion-row>
+            <ion-row class="ion-justify-content-center">
+              <ion-text class="text-center">Registrar Prestamo</ion-text>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="card text-white bg-primary mb-3" routerLink="/soporte">
+          <ion-card-content>
+            <ion-row class="ion-justify-content-center">
+              <ion-icon class="home-icons" name="add"></ion-icon>
+            </ion-row>
+            <ion-row class="ion-justify-content-center">
+              <ion-text  class="text-center">Tienes alguna duda?</ion-text>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      </ion-row>
+</ion-grid>
+</ion-content>

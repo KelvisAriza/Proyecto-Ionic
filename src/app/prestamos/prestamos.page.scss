@@ -1,0 +1,38 @@
+.item-background-color{
+    --ion-item-background:#E9F1FE;
+}
+
+ion-content{
+
+    --ion-background-color:#E9F1FE;
+}
+
+ion-searchbar {
+    --icon-color: var(--ion-color-primary); 
+}
+
+ion-skeleton-text {
+    --background-rgb: 230,40,50;
+}
+
+.my-button{
+    text-align: right;
+}
+
+.button-container{
+    display:inline-block;
+    position:relative;
+    }
+    
+    .button-container a{
+    position: absolute;
+    top:0.5em;
+    right:0.5em;
+    background-color:#c40232;
+    border-radius:2em;
+    color:rgb(204, 200, 200);
+    padding:0.5em 0.5em;
+    text-decoration: none;
+    }
+
+

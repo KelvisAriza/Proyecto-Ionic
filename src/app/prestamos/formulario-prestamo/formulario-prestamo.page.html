@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/clientes"></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ <div class="d-grid gap-2 col-6 mx-auto right" > 
+    <ion-button class="center" routerLink="/prestamos/consultas" shape="round" color="primary">Calcular</ion-button>
+</div>
+
+<br>
+<br>
+
+<h1 class="display-1 text-dark" align="center">Datos del Prestamo </h1>
+
+<ion-list class="item-background-color">
+
+<ion-item lines="none">
+  <ion-label class="text-dark" for="valor_prestamo">Valor prestamo:</ion-label>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input type="number" class="form-control" id="valor_prestamo" placeholder="Ingresar Valor Prestamo" name="valor_prestamo"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-label class="text-dark" for="numero_cuota">Numero cuotas:</ion-label>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input type="number" class="form-control" id="numero_cuota" placeholder="Ingresar Numero Cuota" name="numero_cuota"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-label class="text-dark" for="meses_plazo">Meses de plazo:</ion-label>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input type="number" class="form-control" id="meses_plazo" placeholder="Ingresar Meses Plazo" name="meses_plazo"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-label class="text-dark" for="fecha_inicio_prestamo">Fecha inicio prestamo:</ion-label>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input type="date" class="form-control" id="fecha_inicio_prestamo" placeholder="Ingresar Fecha Inicio Prestamo" name="fecha_inicio_prestamo"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-label class="text-dark" for="fecha_final_prestamo">Fecha final prestamo:</ion-label>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input type="date" class="form-control" id="fecha_final_prestamo" placeholder="Ingresar Fecha Final Prestamo" name="fecha_final_prestamo"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-label class="text-dark" for="intereses">Intereses:</ion-label>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input type="number" class="form-control" id="intereses" placeholder="Ingresar Intereses" name="intereses"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-label class="text-dark"  for="valor_total_prestamo">Valor total prestamo:</ion-label>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input type="number" class="form-control" id="valor_total_prestamo" placeholder="Ingresar Total Prestamo" name="valor_total_prestamo"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-label class="text-dark" for="estado">Estado:</ion-label>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input type="name" class="form-control" id="estado" placeholder="Ingresar Estado" name="estado"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-label class="text-dark" for="id_cliente">Id cliente:</ion-label>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input type="number" class="form-control" id="id_cliente" placeholder="Ingresar Id Cliente" name="id_cliente"></ion-input>
+</ion-item>
+
+</ion-list>
+ 
+  <br> 
+  <div class="d-grid gap-2 col-6 mx-auto"> 
+    <ion-button class="center" shape="round" color="primary">Guardar</ion-button>
+  </div>
+  <br>  
+
+</ion-content>

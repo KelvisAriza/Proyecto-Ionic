@@ -1,0 +1,30 @@
+ion-content{
+
+    --ion-background-color:#E9F1FE;
+}
+
+.item-background-color{
+    --ion-item-background:#E9F1FE;
+}
+
+.right{
+    position: absolute;
+    top:0.5em;
+    right:0.5em;  
+}
+
+.button-container{
+    display:inline-block;
+    position:relative;
+    }
+    
+    .button-container a{
+    position: absolute;
+    top:0.5em;
+    right:0.5em;
+    background-color:#c40232;
+    border-radius:2em;
+    color:rgb(204, 200, 200);
+    padding:0.5em 0.5em;
+    text-decoration: none;
+    }

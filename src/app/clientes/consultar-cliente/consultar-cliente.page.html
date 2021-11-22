@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/clientes"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<div>
+ <ion-searchbar animated (ionChange)="buscarUsuario( $event )" color="primary"></ion-searchbar>
+</div>
+<ion-list class="item-background-color" *ngIf="usuarios.length === 0" >
+  <ion-item *ngFor="let i of [1,1,1,1,1,1,1,1,1,1,1]">
+   <ion-label>
+     <ion-skeleton-text animated style="width: 80%" color="medium"></ion-skeleton-text>
+     <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+   </ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list class="item-background-color" *ngIf="usuarios.length > 0">
+     <ion-item *ngFor="let usuario of usuarios | filtro:textoBuscar" class="text-dark">
+     <ion-label>
+    <h4>{{usuario.nombre_completo}}</h4>
+     <h3>{{usuario.email}}</h3>
+     <ion-button routerLink= "/clientes/formulario-cliente" color="primary" shape="round">Actualizar</ion-button>
+     <ion-button shape="round" color="danger" >Eliminar</ion-button>
+     </ion-label>
+     </ion-item>
+    </ion-list>
+</ion-content>

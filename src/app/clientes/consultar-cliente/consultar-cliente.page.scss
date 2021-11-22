@@ -1,0 +1,17 @@
+
+.item-background-color{
+    --ion-item-background:#E9F1FE;
+}
+
+ion-content{
+
+    --ion-background-color:#E9F1FE;
+}
+
+ion-searchbar {
+    --icon-color: var(--ion-color-primary); 
+}
+
+ion-skeleton-text {
+    --background-rgb: 230,40,50;
+}

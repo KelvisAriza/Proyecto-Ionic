@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Prestamos</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<div class="button-container">
+  <img src="assets/img/prestamos.jpg" />
+  <a routerLink="/prestamos/formulario-prestamo">+ Agregar uno nuevo</a>
+</div>
+<br>
+<br>
+<div>
+ <ion-searchbar animated class="border border-primary text-primary"></ion-searchbar>
+</div>
+<br>
+<ion-list class="item-background-color" *ngIf="creditos.length === 0" >
+  <ion-item *ngFor="let i of [1,1,1,1,1,1,1,1,1,1,1]">
+   <ion-label>
+     <ion-skeleton-text animated style="width: 80%" color="medium"></ion-skeleton-text>
+     <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+   </ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list class="item-background-color" *ngIf="creditos.length > 0">
+     <ion-item *ngFor="let credito of creditos | filtro:textoBuscar" class="text-dark">
+     <ion-label>
+    <h4>{{credito.valor_final_prestamo}}</h4>
+     <h3>{{credito.fecha_final_prestamo}}</h3>
+     <ion-button routerLink = "/prestamos/formulario-prestamo" color="primary" shape="round">Actualizar</ion-button>
+     <ion-button shape="round" color="danger" >Eliminar</ion-button>
+     </ion-label>
+     </ion-item>
+    </ion-list>
+</ion-content>

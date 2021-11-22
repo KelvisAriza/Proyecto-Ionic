@@ -1,21 +1,60 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title>Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+<ion-card routerLink="/clientes" color="white">
+  <img src="assets/img/imgClientes.jpg" />
+  <ion-card-header>
+    <ion-card-title class="display-3 text-dark">Portal de Clientes</ion-card-title>
+  </ion-card-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card-content class="text-dark">
+    En Portal de Clientes podrán agregar a los clientes.
+    Consultar su información principal.
+    Actualizar sus datos y eliminar un usuario.
+  </ion-card-content>
+</ion-card>
+
+<ion-card routerLink="/prestamos" color="white">
+   <img src="assets/img/prestamos.jpg" />
+    <ion-card-header>
+       <ion-card-title class="display-3 text-dark">Prestamos</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="text-dark">
+    Podras gestionar el proceso de un prestamo a un cliente.
+    Con la facilidad de calcular el valor de las cuotas y el valor de los intereses. 
+    Tambien registrar un nuevo prestamo, actualizar la información Y eliminar el prestamo. Cuando ya este cancelado.
+    </ion-card-content>
+</ion-card>
+
+<ion-card routerLink="/facturacion" color="white">
+    <img src="assets/img/facturacion.jpg" />
+    <ion-card-header>
+      <ion-card-title class="display-3 text-dark">Facturación</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="text-dark">
+    Se registraran los pagos que realicen los clientes, 
+    tambien se podra ver la información de todos los pagos registrados, tambien actualizar la información y eliminarla.
+    </ion-card-content>
+</ion-card>
+
+<ion-card routerLink="/soporte" color="white">
+  <img src="assets/img/ayuda.jpg" />
+  <ion-card-header>
+    <ion-card-title class="display-3 text-dark">Soporte</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content class="text-dark">
+    Tienes alguna duda? Comunicate con nosotros!
+  </ion-card-content>
+</ion-card>
+
 </ion-content>

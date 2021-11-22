@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/prestamos/formulario-prestamo"></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card class="item-background-color">
+    <img src="assets/img/calculo.png" />
+    <ion-card-header>
+      <ion-card-title class="display-3 text-dark" align="center">Calcular Valos de cuotas</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="text-dark">
+
+    <ion-item lines="none" class="item-background-color">
+      <ion-label class="text-dark" for="valor_prestamo">Valor prestamo:</ion-label>
+    </ion-item>
+
+    <ion-item lines="none" class="item-background-color">
+      <ion-input type="number" class="form-control" [(ngModel)]="valor_prestamo" placeholder="  Ingresar Valor Prestamo" name="valor_prestamo"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="item-background-color">
+      <ion-label class="text-dark" for="numero_cuota">   Numero cuotas:</ion-label>
+    </ion-item>
+
+    <ion-item lines="none" class="item-background-color">
+      <ion-input type="number" class="form-control" [(ngModel)]="numero_cuotas" placeholder="  Ingresar Numero Cuota" name="numero_cuota"></ion-input>
+    </ion-item>
+    <br>
+    <div class="d-grid gap-2 col-6 mx-auto"> 
+      <ion-button (click)="calcularValor()" shape="round" color="primary">Calcular</ion-button>
+    </div>
+
+    </ion-card-content>
+</ion-card>
+
+<ion-card class="item-background-color">
+    <img src="assets/img/calculo.png" />
+    <ion-card-header>
+      <ion-card-title class="display-3 text-dark" align="center">Calcular Valos de intereses</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="text-dark">
+
+    <ion-item lines="none" class="item-background-color">
+      <ion-label class="text-dark" for="valor_prestamo">Valor prestamo:</ion-label>
+    </ion-item>
+
+    <ion-item lines="none" class="item-background-color">
+      <ion-input type="number" class="form-control" [(ngModel)]="valor_prestamo_porcentaje" placeholder="  Ingresar Valor Prestamo" name="valor_prestamo"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="item-background-color">
+      <ion-label class="text-dark" for="intereses">Porcetaje de interes:</ion-label>
+    </ion-item>
+
+    <ion-item lines="none" class="item-background-color">
+      <ion-input type="number" class="form-control" [(ngModel)]="porcentaje" placeholder="  Ingresar porcentaje" name="intereses"></ion-input>
+    </ion-item>
+    
+    <br>
+    <div class="d-grid gap-2 col-6 mx-auto"> 
+      <ion-button class="center"(click)="calcularPorcentaje()" shape="round" color="primary">Calcular</ion-button>
+    </div>
+     
+    </ion-card-content>
+</ion-card>
+
+
+
+</ion-content>
